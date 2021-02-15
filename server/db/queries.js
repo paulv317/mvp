@@ -7,15 +7,25 @@ const getUser = (req, res) => {
 }
 
 const createUser = (req, res) => {
-  let newUser = [req.body.name, req.body.user_name, req.body.email];
-  debugger;
+  let newUser = req.body;
   pool.query('INSERT INTO users (name, user_name, email) values ($1, $2, $3)', newUser, (err, data) => {
     if (err) {
       console.log(err);
     } else {
-      res.send(null, data);
+      res.send(data);
     }
   })
+}
+
+const createBudget = (req, res) => {
+  let newBudget = req.body;
+  pool.query('INSERT INTO budget (money, spent) value ($1, 0)', newBudget, (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.send(data);
+    }
+  }
 }
 
 

@@ -8,14 +8,11 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hackreactor/hrr50-mvp.git"
-  },
-  "bugs": {
-    "url": "https://github.com/hackreactor/hrr50-mvp/issues"
+    "url": "git+https://github.com/paulv317/mvp.git"
   },
   "scripts": {
     "start": "node server",
-    "watch": "webpack"
+    "watch": "webpack --watch"
   },
   "dependencies": {
     "@babel/core": "^7.12.16",
@@ -35,6 +32,5 @@
     "webpack": "^5.22.0",
     "webpack-cli": "^4.5.0"
   },
-  "devDependencies": {},
-  "homepage": "https://github.com/hackreactor/hrr50-mvp#readme"
+  "devDependencies": {}
 }

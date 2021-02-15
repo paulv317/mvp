@@ -2,15 +2,16 @@ const dotenv = require('dotenv').config({ path: '/Users/paulvanleuven/Documents/
 const { Pool } = require('pg');
 
 const pool = new Pool({
-  user: process.env.USER,
+  user: 'doug',
   host: 'localhost',
-  database: process.env.DB,
-  password: process.env.DB_PASSWORD,
+  database: 'budget',
+  password: 'shiloh',
   port: 5432,
 })
 
 pool.connect(() => {
   console.log('we are connected!');
+  console.log(pool);
 })
 
 module.exports = pool;
