@@ -1,0 +1,40 @@
+{
+  "name": "hrr50-mvp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackreactor/hrr50-mvp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hackreactor/hrr50-mvp/issues"
+  },
+  "scripts": {
+    "start": "node server",
+    "watch": "webpack"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
+    "axios": "^0.21.1",
+    "babel-loader": "^8.2.2",
+    "body-parser": "^1.19.0",
+    "css-loader": "^5.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^8.5.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-modal": "^3.12.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.22.0",
+    "webpack-cli": "^4.5.0"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/hackreactor/hrr50-mvp#readme"
+}

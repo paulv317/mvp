@@ -1,5 +1,9 @@
 ### node etc ###
 
+# db config file
+/Users/paulvanleuven/Documents/Code/MVP/hrr50-mvp/server/db/config.js
+/Users/paulvanleuven/Documents/Code/MVP/.env
+
 # Logs
 logs
 *.log
