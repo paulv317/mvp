@@ -8,16 +8,18 @@ function SignIn(props) {
   const [clicked, setClicked] = useState(false);
   const [userInfo, setInfo] = useState('');
 
+
+  // click functionality. Allows users to sign in by entering info and clicking 'sign in' button.
+    // sets clicked to true and renders budget info
   const handleClick = () => {
     axios.get('/budget/' + userName)
       .then((info) => {
-        console.log(info);
         setInfo(info.data);
-        console.log(userInfo);
         setClicked(true);
       })
   }
 
+  // before clicked, users sign in (no authorization functionality)
   if (!clicked) {
     return (
       <div>
@@ -26,9 +28,10 @@ function SignIn(props) {
         <button type="button" onClick={handleClick}>sign in</button>
       </div>
     )
+    // after clicked, users see budget info
   } else {
     return (
-      <Budget moneyLeft={userInfo.money} moneySpent={userInfo.spent}/>
+      <Budget moneyLeft={userInfo.money} moneySpent={userInfo.spent} user={userInfo.user_name}/>
     )
   }
 

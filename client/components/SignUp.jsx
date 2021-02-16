@@ -27,7 +27,7 @@ function SignUp(props) {
   } else {
     return (
       <div>
-        <MakeBudget name={name} userName={userName}/>
+        <MakeBudget name={name} moneySpent={0} userName={userName}/>
       </div>
     )
   }
