@@ -20,9 +20,7 @@ app.get('/budget/:userName', query.getUser);
 app.post('/budget/', query.createUser);
 
 // //allow users to initialize income
-// app.post('/budget/:userId/begin/', (req, res) => {
-
-// })
+app.post('/budget/create/', query.createBudget);
 
 // // allow users to
 // app.post('/budget/purchase/', (req, res) => {

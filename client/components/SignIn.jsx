@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Budget from './Budget';
 
 function SignIn(props) {
   const [userName, setUserName] = useState('');
   const [email, setEmail] = useState('');
   const [clicked, setClicked] = useState(false);
-  const [userInfo, setInfo] = useState({ });
+  const [userInfo, setInfo] = useState('');
 
   const handleClick = () => {
-    axios.get('/budget/userName')
+    axios.get('/budget/' + userName)
       .then((info) => {
-        setInfo(info);
+        console.log(info);
+        setInfo(info.data);
+        console.log(userInfo);
         setClicked(true);
       })
   }
@@ -25,7 +28,7 @@ function SignIn(props) {
     )
   } else {
     return (
-      <Budget user={userInfo}/>
+      <Budget moneyLeft={userInfo.money} moneySpent={userInfo.spent}/>
     )
   }
 
