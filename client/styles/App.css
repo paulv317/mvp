@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap');
+}
+
+.signin,
+.signup,
+.container {
+  width: 60%;
+  height: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  align-items: center;
+}
+
+.header {
+  padding-top: 200px;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.big {
+  font-size: 2.3em;
+}
+
+.buttons {
+  display: flex;
+  width: 44%;
+  justify-content: space-around;
+}
+
+button {
+  padding: 20px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.5em;
+  background: rgba(255, 255, 255, .5);
+}
+
+button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 38px 15px rgba(0,0,0,0.57);
+  box-shadow: 0px 0px 38px 15px rgba(0,0,0,0.57);
+}
+
+.bold {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.head button {
+  background: transparent;
+}
+
+.head button:hover {
+  box-shadow: none;
+}

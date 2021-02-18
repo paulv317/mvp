@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  height: 400px;
+  margin-top: 100px;
+  width: 80%;
+  justify-content: space-evenly;
+}
+
+.head {
+  font-size: 2em;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 16px;
+}
+
+.right button {
+  font-size: 20px;
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, .4);
+}
+
+.purchasecontainer {
+  margin-top: 200px;
+  height: 200px;
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.purchase {
+  width: 50%;
+}
+
+.purchasebutton {
+  padding: 10px 50px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.5em;
+  background: rgba(255, 255, 255, .5);
+}
+
+.return {
+  font-size: 16px;
+  padding: 10px 15px;
+}

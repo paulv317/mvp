@@ -22,12 +22,15 @@ app.post('/budget/', query.createUser);
 // //allow users to initialize income
 app.post('/budget/create/', query.createBudget);
 
-// // allow users to
-// app.post('/budget/purchase/', (req, res) => {
+//allow users to add money to their account
+app.put('/budget/addmoney/:userName', query.addMoney);
 
-// })
+// allow users to add a purchase
+app.post('/budget/purchase/', query.createPurchase);
 
-// app.put('/budget/:id')
+// allow users to see all purchases
+app.get('/budget/spending/:userName', query.seePurchases);
+
 
 app.listen(process.env.PORT, () => {
   console.log(`Budget tracker is listening on port ${process.env.PORT}`);

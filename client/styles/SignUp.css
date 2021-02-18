@@ -1,0 +1,38 @@
+.container {
+  margin-top: 100px;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  width: 80%;
+  border-bottom: solid 2px black;
+  text-align: center;
+  font-size: 1.2em;
+  padding-bottom: 10px;
+}
+
+input::placeholder {
+  text-align: center;
+  font-size: 1.2em;
+  padding-bottom: 10px;
+  color: white;
+}
+
+input:focus {
+  border: none;
+  border-bottom: solid 2px black;
+  outline: none;
+}
+
+.signup button:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}

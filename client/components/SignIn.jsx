@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import Budget from './Budget';
+import styles from '../styles/SignIn.css';
 
 function SignIn(props) {
   const [userName, setUserName] = useState('');
@@ -22,16 +23,16 @@ function SignIn(props) {
   // before clicked, users sign in (no authorization functionality)
   if (!clicked) {
     return (
-      <div>
-        <input type="text" onChange={e => setUserName(e.target.value)}></input>
-        <input type="text" onChange={e => setEmail(e.target.value)}></input>
+      <div className={styles.container}>
+        <input placeholder="user name" type="text" onChange={e => setUserName(e.target.value)}></input>
+        <input placeholder="email" type="text" onChange={e => setEmail(e.target.value)}></input>
         <button type="button" onClick={handleClick}>sign in</button>
       </div>
     )
     // after clicked, users see budget info
   } else {
     return (
-      <Budget moneyLeft={userInfo.money} moneySpent={userInfo.spent} user={userInfo.user_name}/>
+      <Budget moneyLeft={userInfo.money} spent={userInfo.spent} user={userName}/>
     )
   }
 
